@@ -1,0 +1,219 @@
+.formacao {
+  background-color: #121212;
+  color: #919191;
+}
+
+.formacao-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+.formacao-div-2 {
+  margin-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3;
+}
+
+.formacao-txt {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  grid-column: 2;
+  grid-row: 1;
+  display: block;
+  font-size: 1.5rem;
+  margin-right: 40px;
+}
+
+.formacao-bloco {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #383838;
+  position: relative;
+  border-radius: 9px;
+  margin-bottom: 60px;
+  max-width: fit-content;
+  margin-left: 60px;
+}
+
+.curso-bloco::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  position: absolute;
+  left: 20px;
+  top: -4px;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  background-image: linear-gradient(180deg, #2617d9, #31257c);
+}
+
+.formacao-titulo {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.curso-bloco {
+  font-size: 1rem;
+}
+
+.instituicao {
+  color: #ededed;
+}
+
+.formacao-subtitulo {
+  font-size: 9rem;
+  text-transform: uppercase;
+  line-height: 1;
+  background: var(
+    --gradient,
+    linear-gradient(180deg, #2617d9 0%, #31257c 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  word-wrap: break-word;
+  max-width: 5ch;
+}
+
+.cursos-1,
+.cursos-2 {
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.cursos-1 {
+  grid-column: 1;
+  margin-right: 40px;
+}
+
+.cursos-2 {
+  grid-column: 2;
+  margin-right: 40px;
+}
+
+.cursos-1 img {
+  position: absolute;
+  left: -20px;
+  top: 1px;
+}
+
+.cursos-2 img {
+  position: absolute;
+  left: -20px;
+  top: 1px;
+}
+
+.cursos-1 h3,
+.cursos-2 h3 {
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #b8b8b7;
+  line-height: 1.4;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.cursos-1 li,
+.cursos-2 li {
+  color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .formacao-subtitulo {
+    font-size: 3rem;
+    word-wrap: initial;
+    max-width: initial;
+  }
+
+  .formacao-div-2 {
+    grid-column: 1/-1;
+    margin-left: 0px;
+  }
+
+  .formacao-txt {
+    margin-left: 0px;
+  }
+
+  .formacao-bloco {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formacao-bloco {
+    margin-bottom: 40px;
+  }
+
+  .formacao-div {
+    padding-top: 40px;
+  }
+
+  .formacao-txt {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .cursos-2 {
+    grid-row: 4;
+    grid-column: 1/-1;
+  }
+
+  .cursos-1 {
+    grid-column: 1/-1;
+  }
+
+  .formacao-txt {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .formacao-bloco {
+    margin-bottom: 20px;
+  }
+
+  .formacao-div {
+    padding-top: 20px;
+  }
+
+  .formacao-txt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .formacao-txt {
+    font-size: 1rem;
+    margin-right: 40px;
+  }
+
+  .formacao-bloco h3 {
+    font-size: 1rem;
+  }
+
+  .formacao-bloco span {
+    font-size: 0.9rem;
+  }
+
+  .formacao-subtitulo {
+    font-size: 2rem;
+  }
+
+  .cursos-1,
+  .cursos-2 {
+    font-size: 0.85rem;
+  }
+}

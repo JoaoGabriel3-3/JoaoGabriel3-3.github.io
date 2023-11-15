@@ -1,0 +1,104 @@
+.introducao {
+  display: grid;
+  align-items: center;
+}
+
+.introducao div {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 80px;
+  margin-top: 80px;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.introducao h1 p {
+  font-size: initial;
+  font-weight: initial;
+}
+
+.introducao h1 {
+  font-size: 3rem;
+  line-height: 1.4;
+  align-content: center;
+  position: relative;
+  text-align: left;
+}
+
+.introducao::after {
+  margin-top: 60px;
+  content: "";
+  display: flex;
+  width: 90%;
+  height: 2px;
+  background-color: #f7f7f7;
+  justify-self: center;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao h1 {
+    grid-template-columns: 1fr 1fr;
+    font-size: 2rem;
+  }
+
+  .introducao div {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  .introducao {
+    place-items: start;
+  }
+  .introducao h1 {
+    grid-template-columns: 1fr;
+    font-size: 1.5rem;
+  }
+
+  .introducao div {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao div img {
+    display: none;
+  }
+
+  .introducao div {
+    margin-top: 40px;
+    padding-left: 0px;
+    grid-template-columns: 1fr;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao h1 {
+    font-size: 1.5rem;
+  }
+
+  .introducao::after {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao div {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .introducao h1 {
+    margin-left: 40px;
+    font-size: 1.5rem;
+  }
+}

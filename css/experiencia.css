@@ -1,0 +1,168 @@
+.experiencia {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 60px;
+  padding-left: 40px;
+}
+
+.subtitulo {
+  font-size: 9rem;
+  word-break: break-all;
+  text-transform: uppercase;
+  line-height: 1;
+  max-width: 4ch;
+  color: #ededed;
+}
+
+.experiencia-txt {
+  font-size: 1.5rem;
+  color: #919191;
+  line-height: 30px;
+  margin-right: 40px;
+}
+
+strong {
+  color: initial;
+}
+
+.projetos {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  background-color: #ededed;
+  padding: 30px 50px;
+  margin-right: 40px;
+  gap: 10px 40px;
+  border-radius: 9px;
+  margin-bottom: 60px;
+}
+
+.projetos::before {
+  content: "";
+  width: 4px;
+  height: 30px;
+  display: block;
+  border-radius: 5px 0px 0px 5px;
+  background: var(
+    --gradient,
+    linear-gradient(180deg, #2617d9 0%, #31257c 100%)
+  );
+  position: absolute;
+  top: 25px;
+  left: -4px;
+}
+
+.projeto-txt {
+  color: #6b6b6b;
+  font-size: 1.5rem;
+  grid-column: 1;
+  line-height: 27.5px;
+}
+
+.projeto-titulo {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #121212;
+  display: block;
+}
+
+.titulo2 {
+  text-align: right;
+}
+
+.projeto-ano {
+  position: absolute;
+  left: -120px;
+  top: 30px;
+  width: 80px;
+  text-align: right;
+}
+
+.projeto-ferramentas {
+  display: flex;
+  place-items: end;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projeto-ferramentas li {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #fafafa;
+  font-size: 1rem;
+  display: block;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitulo {
+    font-size: 3rem;
+    word-break: normal;
+    color: #121212;
+  }
+
+  .projeto-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .experiencia {
+    margin-top: 40px;
+    gap: 40px;
+  }
+
+  .projetos {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .titulo2 {
+    grid-row: 3;
+    text-align: left;
+  }
+
+  .projeto-ferramentas {
+    place-items: start;
+  }
+
+  .experiencia-txt {
+    font-size: 1.25rem;
+  }
+
+  .projeto-txt {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .projetos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .experiencia {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .experiencia p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,77 @@
+.contato-rodape {
+  background-color: #000000;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 120px;
+  padding: 120px 40px 10px 40px;
+  align-items: center;
+  position: relative;
+}
+
+.contato p {
+  color: #919191;
+  font-size: 1.25rem;
+  align-content: center;
+}
+
+.contato span {
+  font-size: 1rem;
+  color: #454545;
+  display: block;
+  padding-top: 60px;
+  grid-column: 1/-1;
+}
+
+.contato-bloco h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fafafa;
+}
+
+@media (max-width: 900px) {
+  .contato-bloco h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .contato {
+    gap: 0px 60px;
+  }
+
+  .contato-bloco h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato span {
+    padding-top: 20px;
+  }
+
+  .contato {
+    gap: 0px 40px;
+    padding: 40px 40px 10px 40px;
+  }
+
+  .contato p {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contato p {
+    font-size: 1rem;
+  }
+
+  .contato h2 {
+    font-size: 1rem;
+  }
+}
