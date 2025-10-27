@@ -8,38 +8,41 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 60px;
   padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
 }
 
 .formacao-div-2 {
   margin-left: 60px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr ; 
   grid-template-rows: 3;
+  margin-bottom: 100px;
+}
+
+.formacao-blocos{
+  display: grid;
+  grid-column: 1/3;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .formacao-txt {
   margin-top: 60px;
   margin-bottom: 60px;
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 1/3;
   display: block;
   font-size: 1.5rem;
-  margin-right: 40px;
 }
 
 .formacao-bloco {
-  grid-column: 2;
-  grid-row: 2;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   padding: 20px;
   background-color: #383838;
-  position: relative;
   border-radius: 9px;
-  margin-bottom: 60px;
-  max-width: fit-content;
-  margin-left: 60px;
+  position: relative;
+  gap: 10px;
 }
 
 .curso-bloco::before {
@@ -62,6 +65,7 @@
 
 .curso-bloco {
   font-size: 1rem;
+  letter-spacing: 0.05rem;
 }
 
 .instituicao {
@@ -130,6 +134,19 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: 1300px) {
+  .formacao-div-2{
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+} 
+
+@media (max-width: 1000px){
+  .formacao-blocos{
+    grid-template-columns: 1fr;
+    margin-right: 0;
+  }
+}
 @media (max-width: 900px) {
   .formacao-subtitulo {
     font-size: 3rem;

@@ -27,16 +27,14 @@ strong {
 }
 
 .projetos {
-  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
   background-color: #ededed;
   padding: 30px 50px;
-  margin-right: 40px;
   gap: 10px 40px;
   border-radius: 9px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .projetos::before {
@@ -94,6 +92,20 @@ strong {
   font-size: 1rem;
   display: block;
   border-radius: 5px;
+}
+
+.projetos-section{
+  height: 400px;
+  overflow-y: scroll;
+  margin-bottom: 60px;
+  margin-right: 60px;
+  margin-top: 60px;
+}
+
+@media (max-width: 700px){
+  .projetos-section{
+    height: 300px;
+  }
 }
 
 @media (max-width: 1000px) {

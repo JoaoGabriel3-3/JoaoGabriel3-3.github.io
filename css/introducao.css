@@ -27,6 +27,7 @@
 
 .introducao::after {
   margin-top: 60px;
+  margin-bottom: 60px;
   content: "";
   display: flex;
   width: 90%;
@@ -67,7 +68,7 @@
 }
 
 @media (max-width: 500px) {
-  .introducao div img {
+  .introducao div{
     display: none;
   }
 
@@ -79,6 +80,7 @@
 
   .introducao {
     grid-template-columns: 1fr;
+    margin-bottom: 40px;
   }
 
   .introducao h1 {
